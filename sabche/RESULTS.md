@@ -66,7 +66,7 @@ Claude ran through the Message Batches API, which is billed at half price.
 | Run | Approximate cost |
 |---|---|
 | Claude Sonnet 5, test | about $15 |
-| Gemini 3.1 Flash Lite, one run | about 500 [currency to confirm] |
+| Gemini 3.1 Flash Lite, one run | about ₹500 |
 
 These are rough figures from the account, not exact. As a cross-check, the Claude token counts
 above at list prices with the batch discount come to about $16, and the last of the three

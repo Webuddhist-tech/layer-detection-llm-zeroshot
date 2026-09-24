@@ -62,7 +62,7 @@ Claude ran through the normal API with streaming, one window at a time.
 | Run | Approximate cost |
 |---|---|
 | Claude Sonnet 5, test | about $25 |
-| Gemini 3.1 Flash Lite, one run | about 500 [currency to confirm] |
+| Gemini 3.1 Flash Lite, one run | about ₹500 |
 
 These are rough figures from the account, not exact. As a cross-check, the Claude token counts
 above at list prices ($2 per million input, $0.20 cached, $10 output) come to about $27, and
