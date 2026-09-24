@@ -6,6 +6,14 @@ tsawa-zeroshot-eval repo.
 
 ## Test split (22 books, 2,734 gold spans)
 
+Reproduce without any API key (the predictions are in `results/tsawa/`):
+
+```
+python src/score_spans.py --layer tsawa --split test --per-book \
+  --model claude=results/tsawa/claude-sonnet-5/test/spans \
+  --model gemini=results/tsawa/gemini-3.1-flash-lite/test/spans
+```
+
 | | Claude Sonnet 5 | Gemini 3.1 Flash Lite | mmBERT (for reference) |
 |---|---|---|---|
 | All 22 books | **0.603** (P 0.705, R 0.526) | 0.556 (P 0.650, R 0.486) | 0.521 (P 0.485, R 0.562) |
@@ -20,7 +28,14 @@ of 22.
 
 ## Validation (18 books, 1,700 gold spans)
 
-Gemini only: F1 0.568 (P 0.509, R 0.642). Claude was not run on validation.
+Gemini only. Claude was not run on validation.
+
+| | F1 | Precision | Recall |
+|---|---|---|---|
+| All 18 books | 0.568 | 0.509 | 0.642 |
+| Old batch | 0.545 | 0.445 | 0.702 |
+| New batch | 0.604 | 0.642 | 0.571 |
+| Median book | 0.694 | | |
 
 ## Per book (test F1)
 

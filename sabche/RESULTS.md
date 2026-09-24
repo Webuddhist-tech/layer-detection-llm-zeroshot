@@ -6,6 +6,14 @@ sabche-zeroshot-eval repo.
 
 ## Test split (29 books, 4,079 gold spans)
 
+Reproduce without any API key (the predictions are in `results/sabche/`):
+
+```
+python src/score_spans.py --layer sabche --split test --per-book \
+  --model claude=results/sabche/claude-sonnet-5/test/spans \
+  --model gemini=results/sabche/gemini-3.1-flash-lite/test/spans
+```
+
 | | Claude Sonnet 5 | Gemini 3.1 Flash Lite | mmBERT (for reference) |
 |---|---|---|---|
 | All 29 books | **0.681** (P 0.613, R 0.766) | 0.668 (P 0.600, R 0.754) | 0.962 (P 0.954, R 0.970) |
