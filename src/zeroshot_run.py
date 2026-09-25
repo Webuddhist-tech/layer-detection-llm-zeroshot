@@ -45,6 +45,8 @@ LAYERS = {
               "manifest": "data/tsawa_books_manifest.csv", "prompt": "tsawa/prompt.md"},
     "sabche": {"label": "SABCHE", "gold": "data/sabche_gold.csv",
                "manifest": "data/sabche_books_manifest.csv", "prompt": "sabche/prompt.md"},
+    "chapter": {"label": "CHAPTER", "gold": "data/chapter_gold.csv",
+                "manifest": "data/chapter_books_manifest.csv", "prompt": "chapter/prompt.md"},
 }
 GOLD = MANIFEST = PROMPT = LABEL = None
 

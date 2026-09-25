@@ -225,7 +225,7 @@ def cmd_fetch(args):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--layer", choices=["tsawa", "sabche"], required=True)
+    ap.add_argument("--layer", choices=["tsawa", "sabche", "chapter"], required=True)
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("plan")
     p.add_argument("--groups", type=int, default=3)

@@ -7,10 +7,13 @@ training: what the prompt says and why, what it scored, and what it cost. One fo
 |---|---|---|---|
 | [tsawa](tsawa/) | root text (རྩ་བ) the commentary quotes and explains | 0.603 | 0.556 |
 | [sabche](sabche/) | outline headings (ས་བཅད) | 0.681 | 0.668 |
+| [chapter](chapter/) | chapter and section headings (ལེའུ་) | 0.302 * | 0.540 * |
+
+* Chapter: the two models used different prompts (Claude `chapter/prompt_claude.md`, Gemini `chapter/prompt.md`, which adds one paragraph written after reading Claude's test errors), so the two numbers are not comparable. See [chapter/RESULTS.md](chapter/RESULTS.md).
 
 ## How a prompt is run
 
-The same scripts run both layers (`--layer tsawa` or `--layer sabche`).
+The same scripts run every layer (`--layer tsawa`, `sabche` or `chapter`).
 
 1. **Get the book texts.** They are not in this repo. `src/fetch_texts.py` clones them from
    OpenPecha using an ID list from `data/`:
@@ -41,6 +44,7 @@ The same scripts run both layers (`--layer tsawa` or `--layer sabche`).
 ```
 tsawa/   README.md (prompt story), prompt.md, RESULTS.md
 sabche/  README.md (prompt story), prompt.md, RESULTS.md
+chapter/ README.md (prompt story), prompt.md and prompt_claude.md, RESULTS.md
 src/     zeroshot_run.py, claude_batch.py, score_spans.py, fetch_texts.py,
          gemini_chunks.py (windowing), gemini_locate.py (anchors to offsets)
 data/    gold spans, per-book split and batch, book ID lists (offsets only, no text)

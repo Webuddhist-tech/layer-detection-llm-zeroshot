@@ -58,7 +58,7 @@ def prf(tp: int, n_pred: int, n_gold: int):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--layer", choices=["tsawa", "sabche"], required=True)
+    ap.add_argument("--layer", choices=["tsawa", "sabche", "chapter"], required=True)
     ap.add_argument("--split", default="test", choices=["train", "val", "test"])
     ap.add_argument("--model", action="append", required=True, metavar="NAME=SPAN_DIR")
     ap.add_argument("--per-book", action="store_true")
