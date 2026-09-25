@@ -160,7 +160,6 @@ per run.
 | Sabche pipeline, results | [sabche-layer-detection](https://github.com/tenzinyonten/sabche-layer-detection) |
 | Chapter pipeline, results | [chapter-layer-detection](https://github.com/tenzinyonten/chapter-layer-detection) |
 | Zero-shot prompts, LLM results, scripts | this repository (`chapter/`, `sabche/`, `tsawa/`, `src/`) |
-| Earlier evaluation repos (LLM and mmBERT predictions) | [tsawa-zeroshot-eval](https://github.com/tenzinyonten/tsawa-zeroshot-eval), [sabche-zeroshot-eval](https://github.com/tenzinyonten/sabche-zeroshot-eval) |
 | Datasets (Hugging Face, currently private) | [formatting-tsawa-v6](https://huggingface.co/datasets/Yontenn/formatting-tsawa-v6), [formatting-sabche-v1](https://huggingface.co/datasets/Yontenn/formatting-sabche-v1), [formatting-chapter-v1](https://huggingface.co/datasets/Yontenn/formatting-chapter-v1) |
 | Models (Hugging Face; sabche and chapter are private, the tsawa model is public) | [mmbert-tsawa-v6-nofeat](https://huggingface.co/Yontenn/mmbert-tsawa-v6-nofeat), [mmbert-sabche-v1](https://huggingface.co/Yontenn/mmbert-sabche-v1), [mmbert-chapter-v1](https://huggingface.co/Yontenn/mmbert-chapter-v1) |
 | Joint multi-layer model (an earlier approach) | `layer_detection_model_train` in the Webuddhist-tech organisation (private) |
