@@ -156,17 +156,17 @@ per run.
 
 | Piece | Link |
 |---|---|
-| Tsawa pipeline, results, model card | [tsawa-layer-detection](https://github.com/tenzinyonten/tsawa-layer-detection) (private) |
-| Sabche pipeline, results | [sabche-layer-detection](https://github.com/tenzinyonten/sabche-layer-detection) (private) |
-| Chapter pipeline, results | [chapter-layer-detection](https://github.com/tenzinyonten/chapter-layer-detection) (private) |
+| Tsawa pipeline, results, model card | [tsawa-layer-detection](https://github.com/tenzinyonten/tsawa-layer-detection) |
+| Sabche pipeline, results | [sabche-layer-detection](https://github.com/tenzinyonten/sabche-layer-detection) |
+| Chapter pipeline, results | [chapter-layer-detection](https://github.com/tenzinyonten/chapter-layer-detection) |
 | Zero-shot prompts, LLM results, scripts | this repository (`chapter/`, `sabche/`, `tsawa/`, `src/`) |
 | Earlier evaluation repos (LLM and mmBERT predictions) | [tsawa-zeroshot-eval](https://github.com/tenzinyonten/tsawa-zeroshot-eval), [sabche-zeroshot-eval](https://github.com/tenzinyonten/sabche-zeroshot-eval) |
-| Datasets (Hugging Face, private) | [formatting-tsawa-v6](https://huggingface.co/datasets/Yontenn/formatting-tsawa-v6), [formatting-sabche-v1](https://huggingface.co/datasets/Yontenn/formatting-sabche-v1), [formatting-chapter-v1](https://huggingface.co/datasets/Yontenn/formatting-chapter-v1) |
-| Models (Hugging Face, private) | [mmbert-tsawa-v6-nofeat](https://huggingface.co/Yontenn/mmbert-tsawa-v6-nofeat), [mmbert-sabche-v1](https://huggingface.co/Yontenn/mmbert-sabche-v1), [mmbert-chapter-v1](https://huggingface.co/Yontenn/mmbert-chapter-v1) |
+| Datasets (Hugging Face, currently private) | [formatting-tsawa-v6](https://huggingface.co/datasets/Yontenn/formatting-tsawa-v6), [formatting-sabche-v1](https://huggingface.co/datasets/Yontenn/formatting-sabche-v1), [formatting-chapter-v1](https://huggingface.co/datasets/Yontenn/formatting-chapter-v1) |
+| Models (Hugging Face; sabche and chapter are private, the tsawa model is public) | [mmbert-tsawa-v6-nofeat](https://huggingface.co/Yontenn/mmbert-tsawa-v6-nofeat), [mmbert-sabche-v1](https://huggingface.co/Yontenn/mmbert-sabche-v1), [mmbert-chapter-v1](https://huggingface.co/Yontenn/mmbert-chapter-v1) |
 | Joint multi-layer model (an earlier approach) | `layer_detection_model_train` in the Webuddhist-tech organisation (private) |
 
-The private links only open for people with access. If a repository moves into the organisation, GitHub
-redirects the old link.
+Some of these links only open for people with access, and visibility can change, so check each one. If a
+repository moves into the organisation, GitHub redirects the old link.
 
 Each layer repository has a `README.md` with the six steps in order, `docs/PIPELINE.md` (why each decision was
 made) and `docs/RESULTS.md` (all numbers, per book). Test scores can be checked without a GPU with
